@@ -144,7 +144,7 @@ The server's hostname and port are defined as constants in `server.js`:
 
 ## Project Structure
 
-This repository has a flat structure with 13 files at the root level and no subdirectories:
+This repository has a flat structure with 19 files at the root level and no subdirectories:
 
 | File | Description |
 |---|---|
@@ -157,6 +157,12 @@ This repository has a flat structure with 13 files at the root level and no subd
 | `LoginTest - Copy.java` | Exact duplicate of `LoginTest.java` (test baseline artifact) |
 | `industry.csv` | Static CSV vocabulary data (44 industry categories) |
 | `industry - Copy.csv` | Exact duplicate of `industry.csv` (test baseline artifact) |
+| `100Pages.pdf` | PDF test document (test baseline artifact) |
+| `100Pages - Copy.pdf` | Exact duplicate of `100Pages.pdf` (test baseline artifact) |
+| `demo.jpg` | JPEG image file (test baseline artifact) |
+| `demo - Copy.jpg` | Exact duplicate of `demo.jpg` (test baseline artifact) |
+| `sample.doc` | DOC document file (test baseline artifact) |
+| `sample - Copy.doc` | Exact duplicate of `sample.doc` (test baseline artifact) |
 | `test.py.txt` | Empty sentinel file (test baseline artifact) |
 | `test.py - Copy.txt` | Empty sentinel file (test baseline artifact) |
 | `test.blitzyignore.txt` | Empty sentinel file (test baseline artifact) |
