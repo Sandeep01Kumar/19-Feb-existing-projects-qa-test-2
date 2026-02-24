@@ -14,8 +14,8 @@ A minimal "Hello World" HTTP server built with the Node.js built-in `http` modul
 
 ## Prerequisites
 
-- **Node.js v18 or later** — required based on `lockfileVersion: 3` in `package-lock.json`, which corresponds to npm v7+/v9+ shipping with Node.js v18+
-- **npm v7+** — ships automatically with Node.js v18+
+- **Node.js v20 or later (v22 LTS recommended)** — `lockfileVersion: 3` in `package-lock.json` indicates npm v7+ compatibility (Node.js v18+), but Node.js v18 has reached End of Life as of April 2025; use a currently supported LTS version
+- **npm v7+** — ships automatically with Node.js v20+
 - No other tools, services, or dependencies are required
 
 ## Installation
@@ -50,7 +50,7 @@ node server.js
 
 Expected output:
 
-```
+```text
 Server running at http://127.0.0.1:3000/
 ```
 
@@ -66,7 +66,7 @@ curl http://127.0.0.1:3000/
 
 Expected output:
 
-```
+```text
 Hello, World!
 ```
 
@@ -136,8 +136,8 @@ This server is a minimal demo and has the following **limitations**:
 
 The server's hostname and port are defined as constants in `server.js`:
 
-- To change the **hostname**: modify the `hostname` constant in `server.js` (line 3)
-- To change the **port**: modify the `port` constant in `server.js` (line 4)
+- To change the **hostname**: modify the `hostname` constant in `server.js`
+- To change the **port**: modify the `port` constant in `server.js`
 - To bind to **all network interfaces** (making the server externally accessible): change `hostname` to `'0.0.0.0'`
 
 > **Note:** These values are hardcoded constants. Environment variable support (e.g., `process.env.PORT`) would need to be added for production use.
@@ -166,7 +166,7 @@ This repository has a flat structure with 13 files at the root level and no subd
 
 ## Technical Details
 
-- **Runtime:** Node.js (v18+ recommended, based on `lockfileVersion: 3` in `package-lock.json`)
+- **Runtime:** Node.js (v20+ required, v22 LTS recommended; `lockfileVersion: 3` in `package-lock.json` indicates npm v7+ compatibility)
 - **Module system:** CommonJS (`require()`)
 - **Dependencies:** Zero external npm packages
 - **Built-in modules used:** `http` (Node.js core)
